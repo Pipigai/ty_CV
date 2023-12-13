@@ -9,11 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "element-plus": "^2.4.3",
-    "vue": "^3.3.8"
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@types/vue-router": "^2.0.0",
     "@vitejs/plugin-vue": "^4.5.0",
+    "element-plus": "^2.4.3",
     "typescript": "^5.2.2",
     "unplugin-auto-import": "^0.17.2",
     "unplugin-vue-components": "^0.26.0",
