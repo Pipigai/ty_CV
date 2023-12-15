@@ -295,6 +295,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
 .bgImg {
   width: 100%;
   height: 700px;
+  margin: 0 20px;
 }
 
 .bgImg img {
