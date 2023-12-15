@@ -314,4 +314,16 @@ const handleSelect = (key: string, keyPath: string[]) => {
   font-weight: normal;
   background: #fff;
 }
+
+@media screen and (max-width: 1920px) {
+  .intro {
+    margin-top: -600px;
+  }
+}
+
+@media screen and (max-width: 1512px) {
+  .intro {
+    margin-top: -650px;
+  }
+}
 </style>

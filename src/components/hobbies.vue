@@ -34,6 +34,10 @@ const handleSelect = (key: string, keyPath: string[]) => {
         <router-link to="/hobbies">项目经验</router-link>
       </el-menu-item>
     </el-menu>
+
+    <div class="proMain">
+      <h1>项目经验</h1>
+    </div>
 </template>
 
 <style>
@@ -56,5 +60,52 @@ const handleSelect = (key: string, keyPath: string[]) => {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.proMain {
+  background: url(../assets/fengmiantu/wo1.JPG) no-repeat;
+  height: 730px;
+  background-size: 100% 100%;
+  margin: 0 20px;
+}
+
+.proMain h1 {
+  padding-top: 50px;
+}
+
+.el-collapse-item__header {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.place {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1920px) {
+  .proMain {
+    background: url(../assets/fengmiantu/wo1.JPG) no-repeat;
+    height: 840px;
+    background-size: 100% 100%;
+  }
+}
+
+@media screen and (max-width: 1512px) {
+  .proMain {
+    background: url(../assets/fengmiantu/wo1.JPG) no-repeat;
+    height: 720px;
+    background-size: 100% 100%;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .proMain {
+    background: url(../assets/fengmiantu/wo1.JPG) no-repeat;
+    height: 720px;
+    background-size: 100% 100%;
+  }
 }
 </style>
