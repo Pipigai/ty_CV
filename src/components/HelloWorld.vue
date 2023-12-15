@@ -20,8 +20,13 @@ const router = useRouter();
 
 // 事件
 const goToPage = (path: string) => {
-  console.log(path,'123131231')
+  console.log(path, "123131231");
   router.push(path);
+};
+
+const activeIndex = ref("0");
+const handleSelect = (key: string, keyPath: string[]) => {
+  console.log(key, keyPath);
 };
 
 // 初始化渲染数据
@@ -36,14 +41,14 @@ onMounted(() => {
     },
     {
       imgUrl: xiangmu,
-      name: "Project Experience",
-      words: "项目经验",
+      name: "Work Company",
+      words: "工作经历",
       path: "/project",
     },
     {
       imgUrl: aihao,
-      name: "Personal Hobbies and Reviews",
-      words: "个人爱好及评价",
+      name: "Project Experience",
+      words: "项目经验",
       path: "/hobbies",
     },
   ];
@@ -51,7 +56,32 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1>唐瑶简历</h1>
+  <el-menu
+    :default-active="activeIndex"
+    class="el-menu-demo menus"
+    mode="horizontal"
+    :ellipsis="false"
+    @select="handleSelect"
+  >
+    <el-menu-item>
+      <router-link to="/">
+        <div class="headClass">
+          <img src="../assets/fengmiantu/head.png" alt="" />
+          <h3>个人简历</h3>
+        </div>
+      </router-link>
+    </el-menu-item>
+    <div class="flex-grow" />
+    <el-menu-item index="1" :router="true">
+      <router-link to="/self">个人信息</router-link>
+    </el-menu-item>
+    <el-menu-item index="2">
+      <router-link to="/project">工作经历</router-link>
+    </el-menu-item>
+    <el-menu-item index="3">
+      <router-link to="/hobbies">项目经验</router-link>
+    </el-menu-item>
+  </el-menu>
   <el-space direction="vertical" alignment="flex-start">
     <el-skeleton style="width: 240px" :loading="loading" animated :count="3">
       <template #template>
@@ -80,7 +110,11 @@ onMounted(() => {
           class="cardClass"
         >
           <div class="fengmian">
-            <img :src="item.imgUrl" class="image multi-content"  @click="goToPage(item.path)" />
+            <img
+              :src="item.imgUrl"
+              class="image multi-content"
+              @click="goToPage(item.path)"
+            />
           </div>
 
           <div style="padding: 14px">
@@ -104,5 +138,30 @@ onMounted(() => {
 .cardClass {
   margin-right: 20px;
   cursor: pointer;
+}
+
+.cardClass:first-child {
+  margin-left: 20px;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.menus {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.headClass img {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.headClass {
+  display: flex;
+  align-items: center;
 }
 </style>
