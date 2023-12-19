@@ -139,7 +139,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
 }
 
 .workMain {
-  background: url(../assets/fengmiantu/wo1.JPG) no-repeat;
+  background: url(../assets/fengmiantu/wo1.png) no-repeat;
   height: 730px;
   background-size: 100% 100%;
   margin: 0 20px;
@@ -164,7 +164,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
 
 @media screen and (max-width: 1920px) {
   .workMain {
-    background: url(../assets/fengmiantu/wo1.JPG) no-repeat;
+    background: url(../assets/fengmiantu/wo1.png) no-repeat;
     height: 840px;
     background-size: 100% 100%;
   }
@@ -172,7 +172,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
 
 @media screen and (max-width: 1512px) {
   .workMain {
-    background: url(../assets/fengmiantu/wo1.JPG) no-repeat;
+    background: url(../assets/fengmiantu/wo1.png) no-repeat;
     height: 720px;
     background-size: 100% 100%;
   }
@@ -180,7 +180,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
 
 @media screen and (max-width: 1800px) {
   .workMain {
-    background: url(../assets/fengmiantu/wo1.JPG) no-repeat;
+    background: url(../assets/fengmiantu/wo1.png) no-repeat;
     height: 720px;
     background-size: 100% 100%;
   }

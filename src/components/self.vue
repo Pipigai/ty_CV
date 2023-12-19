@@ -50,7 +50,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
 
   <div class="selfMain">
     <div class="bgImg">
-      <img src="../assets/fengmiantu/wo1.JPG" alt="" />
+      <img src="../assets/fengmiantu/wo1.png" alt="" />
     </div>
 
     <div class="intro">
