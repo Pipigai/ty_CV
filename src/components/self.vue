@@ -309,6 +309,10 @@ const handleSelect = (key: string, keyPath: string[]) => {
   margin-bottom: 30px;
 }
 
+.intro h1 {
+  color: #fff;
+}
+
 .my-label {
   width: 100px;
   color: #999;

@@ -71,6 +71,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
 
 .proMain h1 {
   padding-top: 50px;
+  color: #fff;
 }
 
 .el-collapse-item__header {

@@ -49,7 +49,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
             </div>
           </template>
           <div class="company1">
-            部门：CRM<br />
+            部门：CRM ————————前端工程师<br />
             crm部门是针对买卖家订单纠纷流程的部门，所有的项目都涉及到pc端以及WAP端H5页面，买卖家，多语功能。公司网站：卖家：https://seller.dhgate.com/
             买家：https://www.dhgate.com/ <br />
             工作内容：<br />
@@ -67,7 +67,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
             </div>
           </template>
           <div class="company1">
-            部门：研发<br />
+            部门：研发 ————————前端工程师<br />
             工作内容：<br />
             1. 负责商城微信小程序的开发工作<br />
             2. 使用flex弹性布局解决界面相关的对齐居中等问题<br />
@@ -92,7 +92,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
             </div>
           </template>
           <div class="company1">
-            部门：UI设计<br />
+            部门：UI设计 ————————UI设计师<br />
             工作内容：<br />
             1.APP界面设计<br />
             2.Web后台页面设计<br />
@@ -147,6 +147,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
 
 .workMain h1 {
   padding-top: 50px;
+  color: #fff;
 }
 
 .el-collapse-item__header {
