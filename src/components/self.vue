@@ -174,7 +174,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
                   期望城市
                 </div>
               </template>
-              广州
+              成都
             </el-descriptions-item>
             <el-descriptions-item
               class-name="my-class"
@@ -188,7 +188,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
                   薪资要求
                 </div>
               </template>
-              16-18k
+              17k-19k
             </el-descriptions-item>
             <el-descriptions-item
               class-name="my-class"
